@@ -11,43 +11,61 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <style>
          /**********Reset**********/
-         .img {
-          background-image: url(https://i.imgur.com/JxtS1Xj.png);
-          height: 23rem;
-          width: 57rem;
-          background-repeat: no-repeat;
-          text-align: center;
-          background-color: rgb(33, 37, 41);
-          border: 2px solid rgb(33, 37, 41);
-          border-radius: 2rem;
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
-            /* Evita que la imagen se deforme */
-          background-size: cover;
-         }
+.img {
+    background-image: url(https://i.imgur.com/JxtS1Xj.png);
+    height: 23rem;
+    width: 57rem;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: rgb(33, 37, 41);
+    border: 2px solid rgb(33, 37, 41);
+    border-radius: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-size: cover;
+}
 
-        /* Efecto de animación en hover */
-        .img:hover {
-        background-color: rgb(33, 37, 41);
-        transform: scale(0.95); /* Simula una pulsación */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        animation: pulse 0.5s ease-in-out infinite alternate;
-         }
+/* Efecto de animación en hover */
+.img:hover {
+    background-color: rgb(33, 37, 41);
+    transform: scale(0.95); /* Simula una pulsación */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: pulse 0.5s ease-in-out infinite alternate;
+}
 
-        /* Animación de pulso */
-        @keyframes pulse {
-         from {
-           transform: scale(0.95);
-         }
-         to {
-           transform: scale(1);
+/* Animación de pulso */
+@keyframes pulse {
+    from {
+        transform: scale(0.95);
+    }
+    to {
+        transform: scale(1);
     }
 }
-        svg {
-            fill:#fdfeff
-        }
-        .no-underline > li {
-            list-style-type: none;  
-        }
+
+svg {
+    fill: #fdfeff;
+}
+
+.no-underline > li {
+    list-style-type: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Para tablets y dispositivos pequeños */
+    .img {
+        width: 80%; /* Ajusta el ancho al 80% del contenedor */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+}
+
+@media (max-width: 480px) { /* Para dispositivos móviles */
+    .img {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+        height: 15rem; /* Ajusta la altura para mantener el aspecto */
+        border-radius: 1rem; /* Redondeo más sutil en móviles */
+    }
+}
+
     </style>
 </head>
 <body>
