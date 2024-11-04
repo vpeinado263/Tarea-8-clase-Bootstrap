@@ -27,3 +27,6 @@ Inicialmente, me costó acostumbrarme a la estructura de columnas y filas del si
 Al utilizar Bootstrap, algunos componentes no se ajustaban completamente a la estética que quería lograr, por ejemplo, los botones o las tarjetas.
 
 **Solución:** Utilicé clases personalizadas y sobreescribí estilos en el archivo CSS para personalizar los componentes sin perder las funcionalidades base que Bootstrap proporciona.
+
+Puedes ver el proyecto en vivo aquí: [Tarea-8-Bootstrap](https://tarea-8-clase-bootstrap.vercel.app/)
+
